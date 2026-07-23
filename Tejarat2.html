@@ -1,0 +1,2635 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حقوق تجارت 2 – شرکت‌های تجاری</title>
+    <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ===== CSS VARIABLES (LIGHT DEFAULT) ===== */
+        :root {
+            --bg-page: #f2f5fa;
+            --text-primary: #0b1e33;
+            --text-secondary: #4a6a8a;
+            --card-bg: #ffffff;
+            --card-shadow: rgba(11, 30, 51, 0.06);
+            --card-border: #d0d8e4;
+            --table-header-bg-1: #e6edf6;
+            --table-header-bg-2: #e4eef5;
+            --table-header-bg-3: #e8eaf5;
+            --table-header-text: #1a3a5c;
+            --table-row-hover: #f7faff;
+            --table-row-alt: #fafbfd;
+            --badge-bg-excellent: #c8e6c9;
+            --badge-text-excellent: #1b5e20;
+            --badge-bg-good: #dff0d8;
+            --badge-text-good: #2d6a2d;
+            --badge-bg-poor: #fce4e4;
+            --badge-text-poor: #b71c1c;
+            --badge-bg-verypoor: #f8d7da;
+            --badge-text-verypoor: #a11f2a;
+            --badge-bg-moderate: #fff0d6;
+            --badge-text-moderate: #a8641c;
+            --badge-bg-variable: #e8e0f0;
+            --badge-text-variable: #4a2c6b;
+            --badge-bg-warning: #fff3cd;
+            --badge-text-warning: #856404;
+            --badge-bg-urgent: #fce4d6;
+            --badge-text-urgent: #a52a2a;
+            --badge-bg-normal: #e3ecf5;
+            --badge-text-normal: #1a4b7a;
+            --badge-bg-decreased: #dbe4f0;
+            --badge-text-decreased: #1e4a7a;
+            --badge-bg-low: #dbe4f0;
+            --badge-text-low: #1e4a7a;
+            --badge-bg-bad: #fce4e4;
+            --badge-text-bad: #b71c1c;
+            --badge-bg-verybad: #f8d7da;
+            --badge-text-verybad: #a11f2a;
+            --badge-bg-medium: #fff0d6;
+            --badge-text-medium: #a8641c;
+            --badge-bg-good-alt: #dff0d8;
+            --badge-text-good-alt: #2d6a2d;
+            --btn-back-bg: #ffffff;
+            --btn-back-border: #2a7de1;
+            --btn-back-text: #2a7de1;
+            --btn-back-hover-bg: #2a7de1;
+            --btn-back-hover-text: #ffffff;
+            --icon-tag-bg: #eef2f6;
+            --icon-tag-text: #3a4a5a;
+            --menu-card-icon-bg-blue: #e6edf6;
+            --menu-card-icon-text-blue: #2a7de1;
+            --menu-card-icon-bg-green: #e4f0e8;
+            --menu-card-icon-text-green: #2e7d32;
+            --menu-card-icon-bg-orange: #fce8d6;
+            --menu-card-icon-text-orange: #e67e22;
+            --menu-card-icon-bg-purple: #ede7f6;
+            --menu-card-icon-text-purple: #6a1b9a;
+            --menu-card-icon-bg-teal: #e0f2f1;
+            --menu-card-icon-text-teal: #00695c;
+            --menu-card-icon-bg-pink: #fce4ec;
+            --menu-card-icon-text-pink: #ad1457;
+            --menu-card-icon-bg-red: #fce4e4;
+            --menu-card-icon-text-red: #b71c1c;
+            --menu-card-icon-bg-indigo: #e8eaf5;
+            --menu-card-icon-text-indigo: #3f51b5;
+            --menu-card-border: transparent;
+            --menu-card-shadow: rgba(11, 30, 51, 0.06);
+            --section-divider: #d0d8e4;
+        }
+
+        /* ===== DARK MODE VARIABLES ===== */
+        body.dark-mode {
+            --bg-page: #121820;
+            --text-primary: #e8edf5;
+            --text-secondary: #9ab0c9;
+            --card-bg: #1e293b;
+            --card-shadow: rgba(0, 0, 0, 0.4);
+            --card-border: #2d3a4f;
+            --table-header-bg-1: #2a3a52;
+            --table-header-bg-2: #1f334a;
+            --table-header-bg-3: #2a2f4a;
+            --table-header-text: #c8d8e8;
+            --table-row-hover: #26334a;
+            --table-row-alt: #1a2538;
+            --badge-bg-excellent: #2e5a3a;
+            --badge-text-excellent: #b8e0b8;
+            --badge-bg-good: #2a4a3a;
+            --badge-text-good: #b8d8b8;
+            --badge-bg-poor: #5a2a2a;
+            --badge-text-poor: #f0b8b8;
+            --badge-bg-verypoor: #6a2a2a;
+            --badge-text-verypoor: #f0b0b0;
+            --badge-bg-moderate: #5a4020;
+            --badge-text-moderate: #f0d0a0;
+            --badge-bg-variable: #3a2a5a;
+            --badge-text-variable: #d0b8f0;
+            --badge-bg-warning: #4a3a1a;
+            --badge-text-warning: #e0c070;
+            --badge-bg-urgent: #5a2a1a;
+            --badge-text-urgent: #f0b090;
+            --badge-bg-normal: #1a3a5a;
+            --badge-text-normal: #b0d0f0;
+            --badge-bg-decreased: #1a2a5a;
+            --badge-text-decreased: #b0b8f0;
+            --badge-bg-low: #1a2a5a;
+            --badge-text-low: #b0b8f0;
+            --badge-bg-bad: #5a2a2a;
+            --badge-text-bad: #f0b8b8;
+            --badge-bg-verybad: #6a2a2a;
+            --badge-text-verybad: #f0b0b0;
+            --badge-bg-medium: #5a4020;
+            --badge-text-medium: #f0d0a0;
+            --badge-bg-good-alt: #2a4a3a;
+            --badge-text-good-alt: #b8d8b8;
+            --btn-back-bg: #1e293b;
+            --btn-back-border: #4a8af0;
+            --btn-back-text: #4a8af0;
+            --btn-back-hover-bg: #4a8af0;
+            --btn-back-hover-text: #121820;
+            --icon-tag-bg: #2a3a4a;
+            --icon-tag-text: #b0c8e0;
+            --menu-card-icon-bg-blue: #1a2a4a;
+            --menu-card-icon-text-blue: #5a9af0;
+            --menu-card-icon-bg-green: #1a3a2a;
+            --menu-card-icon-text-green: #5ab87a;
+            --menu-card-icon-bg-orange: #4a2a1a;
+            --menu-card-icon-text-orange: #f0a050;
+            --menu-card-icon-bg-purple: #2a1a4a;
+            --menu-card-icon-text-purple: #b080f0;
+            --menu-card-icon-bg-teal: #1a3a3a;
+            --menu-card-icon-text-teal: #60c0b0;
+            --menu-card-icon-bg-pink: #4a1a2a;
+            --menu-card-icon-text-pink: #f07090;
+            --menu-card-icon-bg-red: #4a1a1a;
+            --menu-card-icon-text-red: #f07070;
+            --menu-card-icon-bg-indigo: #1a1a4a;
+            --menu-card-icon-text-indigo: #8080f0;
+            --menu-card-border: #2a3a4a;
+            --menu-card-shadow: rgba(0, 0, 0, 0.5);
+            --section-divider: #2a3a4a;
+        }
+
+        body {
+            font-family: 'Estedad', Tahoma, sans-serif;
+            background: var(--bg-page);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 32px 16px;
+            min-height: 100vh;
+            transition: background 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ===== DARK MODE TOGGLE ===== */
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 2px solid var(--btn-back-border);
+            border-radius: 40px;
+            padding: 8px 16px;
+            display: inline-flex;
+            position: absolute;
+            left: 20px;
+            right: auto;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            font-family: 'Estedad', Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--btn-back-text);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+            backdrop-filter: blur(8px);
+        }
+        .theme-toggle:hover {
+            transform: scale(1.04);
+            background: var(--btn-back-hover-bg);
+            color: var(--btn-back-hover-text);
+            border-color: var(--btn-back-hover-bg);
+        }
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        @media (max-width: 600px) {
+            .theme-toggle {
+                top: 12px;
+                left: 12px;
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .theme-toggle svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        /* ===== MAIN MENU ===== */
+        .page-section {
+            display: none;
+        }
+        .page-section.active {
+            display: block;
+        }
+
+        .page-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 32px;
+            box-shadow: 0 4px 24px var(--card-shadow), 0 1px 3px var(--card-shadow);
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .menu-card {
+            background: var(--card-bg);
+            border-radius: 32px;
+            box-shadow: 0 4px 24px var(--card-shadow), 0 1px 3px var(--card-shadow);
+            padding: 32px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid var(--menu-card-border);
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        .menu-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px var(--card-shadow), 0 2px 8px var(--card-shadow);
+            border-color: #2a7de1;
+        }
+        .menu-card-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .menu-card-icon.blue {
+            background: var(--menu-card-icon-bg-blue);
+            color: var(--menu-card-icon-text-blue);
+        }
+        .menu-card-icon.green {
+            background: var(--menu-card-icon-bg-green);
+            color: var(--menu-card-icon-text-green);
+        }
+        .menu-card-icon.orange {
+            background: var(--menu-card-icon-bg-orange);
+            color: var(--menu-card-icon-text-orange);
+        }
+        .menu-card-icon.purple {
+            background: var(--menu-card-icon-bg-purple);
+            color: var(--menu-card-icon-text-purple);
+        }
+        .menu-card-icon.teal {
+            background: var(--menu-card-icon-bg-teal);
+            color: var(--menu-card-icon-text-teal);
+        }
+        .menu-card-icon.pink {
+            background: var(--menu-card-icon-bg-pink);
+            color: var(--menu-card-icon-text-pink);
+        }
+        .menu-card-icon.red {
+            background: var(--menu-card-icon-bg-red);
+            color: var(--menu-card-icon-text-red);
+        }
+        .menu-card-icon.indigo {
+            background: var(--menu-card-icon-bg-indigo);
+            color: var(--menu-card-icon-text-indigo);
+        }
+
+        .menu-card-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .menu-card-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .menu-card-count {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            background: var(--icon-tag-bg);
+            color: var(--icon-tag-text);
+        }
+
+        /* ===== BACK BUTTON ===== */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--btn-back-bg);
+            border: 2px solid var(--btn-back-border);
+            border-radius: 12px;
+            color: var(--btn-back-text);
+            font-family: 'Estedad', Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 24px;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: var(--btn-back-hover-bg);
+            color: var(--btn-back-hover-text);
+            border-color: var(--btn-back-hover-bg);
+        }
+
+        /* ===== TABLE CARDS ===== */
+        .table-card,
+        .table-section {
+            background: var(--card-bg);
+            border-radius: 32px;
+            box-shadow: 0 4px 24px var(--card-shadow), 0 1px 3px var(--card-shadow);
+            padding: 32px;
+            margin-bottom: 32px;
+            overflow: hidden;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .table-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            padding-right: 14px;
+            border-right: 6px solid #2a7de1;
+            line-height: 1.4;
+            transition: color 0.3s;
+        }
+        .table-wrapper,
+        .table-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-scroll {
+            margin: 0 -4px;
+            padding: 4px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 6px;
+            font-size: 13.5px;
+            min-width: 900px;
+        }
+        th {
+            padding: 14px 12px;
+            font-weight: 600;
+            font-size: 12.5px;
+            text-align: right;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            white-space: nowrap;
+            transition: background 0.3s, color 0.3s;
+        }
+        th.group-clinical {
+            background: var(--table-header-bg-1);
+            color: var(--table-header-text);
+        }
+        th.group-immuno {
+            background: var(--table-header-bg-2);
+            color: var(--table-header-text);
+        }
+        th.group-pathology {
+            background: var(--table-header-bg-2);
+            color: var(--table-header-text);
+        }
+        th.group-prognosis {
+            background: var(--table-header-bg-3);
+            color: var(--table-header-text);
+        }
+
+        td {
+            padding: 14px 12px;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--card-border);
+            vertical-align: top;
+            transition: background 0.2s ease, color 0.2s, border-color 0.2s;
+            color: var(--text-primary);
+        }
+        tr:hover td {
+            background: var(--table-row-hover);
+        }
+        tr td:first-child {
+            border-radius: 0 12px 12px 0;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--table-row-alt);
+        }
+        tr td:last-child {
+            border-radius: 12px 0 0 12px;
+        }
+
+        /* ===== BADGES ===== */
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11.5px;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: background 0.3s, color 0.3s;
+        }
+        .badge-excellent {
+            background: var(--badge-bg-excellent);
+            color: var(--badge-text-excellent);
+        }
+        .badge-good {
+            background: var(--badge-bg-good);
+            color: var(--badge-text-good);
+        }
+        .badge-poor {
+            background: var(--badge-bg-poor);
+            color: var(--badge-text-poor);
+        }
+        .badge-very-poor {
+            background: var(--badge-bg-verypoor);
+            color: var(--badge-text-verypoor);
+        }
+        .badge-moderate {
+            background: var(--badge-bg-moderate);
+            color: var(--badge-text-moderate);
+        }
+        .badge-variable {
+            background: var(--badge-bg-variable);
+            color: var(--badge-text-variable);
+        }
+        .badge-warning {
+            background: var(--badge-bg-warning);
+            color: var(--badge-text-warning);
+        }
+        .badge-urgent {
+            background: var(--badge-bg-urgent);
+            color: var(--badge-text-urgent);
+            font-weight: 600;
+        }
+        .badge-normal {
+            background: var(--badge-bg-normal);
+            color: var(--badge-text-normal);
+        }
+        .badge-decreased {
+            background: var(--badge-bg-decreased);
+            color: var(--badge-text-decreased);
+        }
+        .badge-low {
+            background: var(--badge-bg-low);
+            color: var(--badge-text-low);
+        }
+        .badge-bad {
+            background: var(--badge-bg-bad);
+            color: var(--badge-text-bad);
+        }
+        .badge-verybad {
+            background: var(--badge-bg-verybad);
+            color: var(--badge-text-verybad);
+        }
+        .badge-medium {
+            background: var(--badge-bg-medium);
+            color: var(--badge-text-medium);
+        }
+        .badge-good-alt {
+            background: var(--badge-bg-good-alt);
+            color: var(--badge-text-good-alt);
+        }
+
+        /* ===== ARROWS ===== */
+        .arrow-up {
+            color: #c62828;
+            font-weight: 700;
+        }
+        .arrow-down {
+            color: #2e7d32;
+            font-weight: 700;
+        }
+        body.dark-mode .arrow-up {
+            color: #f07070;
+        }
+        body.dark-mode .arrow-down {
+            color: #70c070;
+        }
+
+        /* ===== ICON TAGS ===== */
+        .icon-tag {
+            display: inline-block;
+            background: var(--icon-tag-bg);
+            padding: 0 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            color: var(--icon-tag-text);
+            margin-left: 4px;
+            font-weight: 500;
+            transition: background 0.3s, color 0.3s;
+        }
+        .highlight {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .subtext {
+            font-size: 11px;
+            color: var(--text-secondary);
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 700px) {
+            body {
+                padding: 16px 10px;
+            }
+            .table-card,
+            .table-section {
+                padding: 20px 16px;
+                border-radius: 20px;
+            }
+            .table-title {
+                font-size: 17px;
+                margin-bottom: 16px;
+            }
+            table {
+                font-size: 11.5px;
+                min-width: 700px;
+            }
+            th,
+            td {
+                padding: 10px 8px;
+            }
+            .badge {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            .page-title {
+                font-size: 20px;
+            }
+        }
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                padding: 10px;
+            }
+            .table-card,
+            .table-section {
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+                background: white !important;
+            }
+            tr:hover td {
+                background: white !important;
+            }
+            .theme-toggle {
+                display: none !important;
+            }
+        }
+
+        /* ===== SECTION DIVIDER ===== */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--section-divider), transparent);
+            margin: 40px 0;
+            border: none;
+        }
+        .section-subtitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            margin-top: 8px;
+        }
+
+        .table-section .table-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            padding-right: 14px;
+            border-right: 6px solid #2a7de1;
+            line-height: 1.4;
+        }
+        .table-section .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @media (max-width: 1024px) {
+            .menu-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+
+        .theme-toggle span {
+            display: inline-flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== DARK MODE TOGGLE BUTTON ===== -->
+    <div class="theme-toggle" id="themeToggle" role="button" tabindex="0" aria-label="تغییر تم">
+        <span id="themeIcon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 10 10 0 0 0-10-10zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></svg>
+        </span>
+        <span id="themeLabel">تم روشن</span>
+    </div>
+
+    <div class="container">
+
+        <!-- ============ MAIN MENU ============ -->
+        <div id="main-menu" class="page-section active">
+            <h1 class="page-title">⚖️ حقوق تجارت 2 – شرکت‌های تجاری<br><span style="font-size:16px;font-weight:400;color:var(--text-secondary);">منوی اصلی</span></h1>
+            <div class="menu-grid">
+
+                <!-- 1. کلیات و تعاریف -->
+                <a href="#" class="menu-card" onclick="showPage('general'); return false;">
+                    <div class="menu-card-icon blue">📋</div>
+                    <div class="menu-card-title">کلیات و تعاریف</div>
+                    <div class="menu-card-desc">تفاوت شرکت‌های تجاری و مدنی، شخصیت حقوقی، تابعیت، اقامتگاه، دسته‌بندی شرکت‌ها و نحوه مطالعه قوانین</div>
+                    <div class="menu-card-count">۴ جدول</div>
+                </a>
+
+                <!-- 2. شرکت سهامی عام -->
+                <a href="#" class="menu-card" onclick="showPage('sahami_omum'); return false;">
+                    <div class="menu-card-icon green">🏢</div>
+                    <div class="menu-card-title">شرکت سهامی عام</div>
+                    <div class="menu-card-desc">تشکیل، پذیره‌نویسی، مجمع عمومی مؤسس، هیئت مدیره، مجامع عمومی، بازرسان، افزایش و کاهش سرمایه</div>
+                    <div class="menu-card-count">۶ جدول</div>
+                </a>
+
+                <!-- 3. شرکت سهامی خاص -->
+                <a href="#" class="menu-card" onclick="showPage('sahami_khas'); return false;">
+                    <div class="menu-card-icon purple">🏛️</div>
+                    <div class="menu-card-title">شرکت سهامی خاص</div>
+                    <div class="menu-card-desc">تشکیل، تفاوت با عام، سهام، انتقال سهام، حق تقدم، انحلال و تصفیه</div>
+                    <div class="menu-card-count">۴ جدول</div>
+                </a>
+
+                <!-- 4. شرکت با مسئولیت محدود -->
+                <a href="#" class="menu-card" onclick="showPage('masooliyat'); return false;">
+                    <div class="menu-card-icon orange">🤝</div>
+                    <div class="menu-card-title">شرکت با مسئولیت محدود</div>
+                    <div class="menu-card-desc">تشکیل، شرکت‌نامه، سرمایه، مدیران، حقوق و تکالیف شرکا، انحلال</div>
+                    <div class="menu-card-count">۵ جدول</div>
+                </a>
+
+                <!-- 5. شرکت تضامنی و نسبی -->
+                <a href="#" class="menu-card" onclick="showPage('tazamoni'); return false;">
+                    <div class="menu-card-icon red">⚡</div>
+                    <div class="menu-card-title">شرکت تضامنی و نسبی</div>
+                    <div class="menu-card-desc">تشکیل، مسئولیت تضامنی، تفاوت با نسبی، انحلال، حقوق شرکا</div>
+                    <div class="menu-card-count">۴ جدول</div>
+                </a>
+
+                <!-- 6. شرکت مختلط -->
+                <a href="#" class="menu-card" onclick="showPage('mokhtalet'); return false;">
+                    <div class="menu-card-icon teal">🔀</div>
+                    <div class="menu-card-title">شرکت مختلط (سهامی و غیرسهامی)</div>
+                    <div class="menu-card-desc">تشکیل، انواع، تفاوت‌ها، مسئولیت شرکا، نام‌گذاری</div>
+                    <div class="menu-card-count">۳ جدول</div>
+                </a>
+
+                <!-- 7. شرکت تعاونی -->
+                <a href="#" class="menu-card" onclick="showPage('taavoni'); return false;">
+                    <div class="menu-card-icon pink">🌾</div>
+                    <div class="menu-card-title">شرکت تعاونی</div>
+                    <div class="menu-card-desc">انواع تعاونی، قانون بخش تعاون، تفاوت با سایر شرکت‌ها</div>
+                    <div class="menu-card-count">۲ جدول</div>
+                </a>
+
+                <!-- 8. نکات High-Yield -->
+                <a href="#" class="menu-card" onclick="showPage('highyield'); return false;">
+                    <div class="menu-card-icon indigo">🎯</div>
+                    <div class="menu-card-title">نکات High-Yield امتحانی</div>
+                    <div class="menu-card-desc">نکات کلیدی، تست‌های مهم، تفاوت‌های افتراقی و نکات طلایی برای آزمون وکالت و ارشد</div>
+                    <div class="menu-card-count">۳ جدول</div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 1: GENERAL ============ -->
+        <div id="general" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: تفاوت شرکت‌های تجاری و مدنی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">ردیف</th>
+                                    <th class="group-clinical">معیار مقایسه</th>
+                                    <th class="group-immuno">شرکت تجاری</th>
+                                    <th class="group-prognosis">شرکت مدنی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>۱</strong></td>
+                                    <td><strong>نحوه تشکیل</strong></td>
+                                    <td>همیشه به موجب عقد (قرارداد) <span class="icon-tag">مستند ماده ۲۰ ق.ت</span></td>
+                                    <td>ممکن است به موجب عقد باشد یا طریق دیگر <span class="icon-tag">مثل وراثت، اختلاط</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۲</strong></td>
+                                    <td><strong>نوع عقد</strong></td>
+                                    <td>عقدی <span class="badge badge-urgent">الزام‌آور</span> (لازم)</td>
+                                    <td>عقدی <span class="badge badge-good">جایز</span> (در صورت تشکیل با عقد)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۳</strong></td>
+                                    <td><strong>شخصیت حقوقی</strong></td>
+                                    <td><span class="badge badge-good">واجد شخصیت حقوقی</span> هستند</td>
+                                    <td><span class="badge badge-poor">فاقد شخصیت حقوقی</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۴</strong></td>
+                                    <td><strong>دارایی</strong></td>
+                                    <td>دارای دارایی اختصاصی مستقل از دارایی شخصی شرکا</td>
+                                    <td>فاقد دارایی اختصاصی؛ اموال متعلق به شرکا</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۵</strong></td>
+                                    <td><strong>حقوق شریک</strong></td>
+                                    <td>شرکا دارای <span class="highlight">حق دینی</span> نسبت به شرکت هستند <span class="icon-tag">سهم یا سهام</span></td>
+                                    <td>شرکا دارای <span class="highlight">حق عینی</span> نسبت به اموال می‌باشند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۶</strong></td>
+                                    <td><strong>اتخاذ تصمیم</strong></td>
+                                    <td>در اغلب موارد به <span class="badge badge-good">اکثریت آرا</span></td>
+                                    <td>در اغلب موارد به <span class="badge badge-warning">اتفاق آرا</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۷</strong></td>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>دارای <span class="badge badge-good">نام مخصوص به خود</span> هستند</td>
+                                    <td>در اغلب موارد <span class="badge badge-normal">فاقد نام مخصوص</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۸</strong></td>
+                                    <td><strong>هدف تشکیل</strong></td>
+                                    <td>هدف همیشه <span class="badge badge-urgent">انتفاع</span> است</td>
+                                    <td>هدف ممکن است انتفاع نباشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۹</strong></td>
+                                    <td><strong>اقامت دعوی</strong></td>
+                                    <td>اقامه دعوی <span class="highlight">بر علیه خود شرکت</span> است</td>
+                                    <td>اقامه دعوی <span class="highlight">بر علیه شرکا</span> است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۱۰</strong></td>
+                                    <td><strong>الزامات قانونی</strong></td>
+                                    <td>دارای الزامات خاص: اسم، ثبت، هیئت مدیره، بازرس <span class="icon-tag">ماده ۲۰ ق.ت</span></td>
+                                    <td>فاقد چنین الزاماتی</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: شرکت‌های موجود در قوانین ایران</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">ردیف</th>
+                                    <th class="group-clinical">نوع شرکت</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">ویژگی کلیدی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>۱</strong></td>
+                                    <td><strong>شرکت سهامی عام</strong> <span class="icon-tag">سرمایه‌ای</span></td>
+                                    <td>ماده ۱ تا ۳۰۰ ل.ا.ق.ت مصوب ۱۳۴۷</td>
+                                    <td>سرمایه به سهام تقسیم، عرضه سهام به عموم، حداقل ۵ سهامدار</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۲</strong></td>
+                                    <td><strong>شرکت سهامی خاص</strong> <span class="icon-tag">سرمایه‌ای</span></td>
+                                    <td>ماده ۱ تا ۳۰۰ ل.ا.ق.ت مصوب ۱۳۴۷</td>
+                                    <td>سرمایه به سهام تقسیم، عدم عرضه به عموم، حداقل ۳ سهامدار</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۳</strong></td>
+                                    <td><strong>شرکت با مسئولیت محدود</strong> <span class="icon-tag">مختلط</span></td>
+                                    <td>ماده ۹۴ تا ۱۱۵ ق.ت مصوب ۱۳۱۱</td>
+                                    <td>سرمایه به سهم الشرکه تقسیم نمی‌شود، مسئولیت محدود به آورده</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۴</strong></td>
+                                    <td><strong>شرکت تضامنی</strong> <span class="icon-tag">شخصی</span></td>
+                                    <td>ماده ۱۱۶ تا ۱۴۷ ق.ت مصوب ۱۳۱۱</td>
+                                    <td>مسئولیت تضامنی و نامحدود شرکا، نام شرکت شامل نام همه شرکا</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۵</strong></td>
+                                    <td><strong>شرکت نسبی</strong> <span class="icon-tag">شخصی</span></td>
+                                    <td>ماده ۱۸۳ تا ۱۹۵ ق.ت مصوب ۱۳۱۱</td>
+                                    <td>مسئولیت نسبی به سهم الشرکه، شبیه تضامنی اما مسئولیت محدودتر</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۶</strong></td>
+                                    <td><strong>شرکت مختلط غیرسهامی</strong> <span class="icon-tag">مختلط</span></td>
+                                    <td>ماده ۱۴۸ تا ۱۶۱ ق.ت مصوب ۱۳۱۱</td>
+                                    <td>شرکای ضامن + شرکای با مسئولیت محدود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۷</strong></td>
+                                    <td><strong>شرکت مختلط سهامی</strong> <span class="icon-tag">مختلط</span></td>
+                                    <td>ماده ۱۶۲ تا ۱۸۲ ق.ت مصوب ۱۳۱۱</td>
+                                    <td>شرکای ضامن + سهامداران با مسئولیت محدود به سهام</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>۸</strong></td>
+                                    <td><strong>شرکت تعاونی</strong> <span class="icon-tag">تعاونی</span></td>
+                                    <td>قانون بخش تعاون اقتصاد ج.ا.ا مصوب ۱۳۷۰</td>
+                                    <td>تشکیل بین صنوف خاص، هدف خصوصی‌سازی و کم کردن فاصله دهک‌ها</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: دسته‌بندی شرکت‌ها (اشخاص / سرمایه / مختلط / تعاونی)</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">دسته</th>
+                                    <th class="group-clinical">شرکت‌های شامل</th>
+                                    <th class="group-immuno">ویژگی اصلی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>شرکت‌های شخص</strong> <span class="icon-tag">شخص محور</span></td>
+                                    <td>تضامنی، نسبی</td>
+                                    <td>عنصر شرکا از درجه اول اهمیت؛ اعتماد به شخصیت شرکا</td>
+                                    <td>نام شرکت شامل نام تمامی شرکا؛ انتقال سهم الشرکه نیازمند رضایت سایر شرکا</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت‌های سرمایه</strong> <span class="icon-tag">سرمایه محور</span></td>
+                                    <td>سهامی عام، سهامی خاص، با مسئولیت محدود</td>
+                                    <td>عنصر سرمایه از درجه اول اهمیت؛ نام مستقل از نام شرکا</td>
+                                    <td>سهامی‌ها: نام کاملاً مستقل | با مسئولیت محدود: شبیه شخصی‌ها اما مسئولیت محدود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت‌های مختلط</strong> <span class="icon-tag">دوگانه</span></td>
+                                    <td>مختلط سهامی، مختلط غیرسهامی</td>
+                                    <td>دارای دو نوع شریک: ضامن (مسئولیت نامحدود) + با مسئولیت محدود</td>
+                                    <td>نام شرکت شامل نام شرکای ضامن؛ شریک با مسئولیت محدود نباید در نام بیاید</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت‌های تعاونی</strong> <span class="icon-tag">تعاون</span></td>
+                                    <td>تعاونی تولید و مصرف، تعاونی سهامی عام، تعاونی فراگیر ملی</td>
+                                    <td>تشکیل بین صنوف خاص؛ هدف خصوصی‌سازی و رفع فقر</td>
+                                    <td>۷۰٪ اعضای تعاونی فراگیر ملی باید از دهک‌های پایین باشند <span class="icon-tag">بند ۱۰ ماده ۱ ق.ب.ت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۴: تابعیت و اقامتگاه اشخاص حقوقی (شرکت‌ها)</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">قاعده حقوقی</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>اقامتگاه شرکت</strong></td>
+                                    <td>مرکز اداره شرکت <span class="icon-tag">محل جلسات مجامع عمومی و هیئت مدیره</span></td>
+                                    <td>ماده ۵۹۰ ق.ت <span class="badge badge-warning">تخصیص یافته از ماده ۱۰۰۲ ق.مدنی</span></td>
+                                    <td>در حقوق تجارت: مرکز اداره | در حقوق مدنی: مرکز عملیات <span class="icon-tag">ماده ۱۰۰۲ ق.م</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تابعیت شرکت</strong></td>
+                                    <td>تابعیت کشوری که <span class="highlight">اقامتگاه</span> شرکت در آنجاست</td>
+                                    <td>ماده ۵۹۱ ق.ت</td>
+                                    <td>تابعیت شرکاء تأثیری در تابعیت شرکت ندارد؛ تابعیت قابل تغییر نیست <span class="icon-tag">ماده ۹۴ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تغییر تابعیت</strong></td>
+                                    <td>شرکت سهامی: <span class="badge badge-verybad">امکان‌پذیر نیست</span> | شرکت با مسئولیت محدود: <span class="badge badge-warning">به اتفاق آرا</span></td>
+                                    <td>ماده ۹۴ ل.ا.ق.ت <span class="icon-tag">سهامی</span> | ماده ۱۱۰ ق.ت <span class="icon-tag">با مسئولیت محدود</span></td>
+                                    <td>نظر قوی: تغییر تابعیت در هیچ شرکتی امکان‌پذیر نیست زیرا تابعیت امری سیاسی است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت ایرانی</strong></td>
+                                    <td>شرکتی که مرکز اصلی آن در ایران باشد</td>
+                                    <td>ماده ۱ قانون ثبت شرکت‌ها</td>
+                                    <td>اتباع خارجی نمی‌توانند بیش از ۴۹٪ سرمایه داشته باشند <span class="icon-tag">حداقل ۵۱٪ ایرانی</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت دولتی</strong></td>
+                                    <td>شرکتی که بیش از ۵۰٪ سرمایه آن متعلق به دولت باشد</td>
+                                    <td>ماده ۴ قانون مدیریت خدمات کشوری ۱۳۸۶</td>
+                                    <td>مشمول قانون تأسیس و اساسنامه خاص خود؛ در صورت سکوت، قانون تجارت <span class="icon-tag">ماده ۳۰۰ ق.ت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 2: SAHAMI OMUM ============ -->
+        <div id="sahami_omum" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: مقدمات تشکیل شرکت سهامی عام</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">الزام</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>الزام اول</strong> <span class="icon-tag">تعهد سرمایه</span></td>
+                                    <td>مؤسسین باید حداقل <span class="badge badge-urgent">۲۰٪</span> کل سرمایه را تعهد (تأمین) نمایند</td>
+                                    <td>ماده ۶ ل.ا.ق.ت</td>
+                                    <td>حداقل ۲۰٪ تعهد شود؛ حداکثر تعیین نشده</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الزام دوم</strong> <span class="icon-tag">عرضه به عموم</span></td>
+                                    <td>مقداری از سرمایه جهت تعهد به <span class="highlight">عموم</span> عرضه گردد</td>
+                                    <td>ماده ۶ ل.ا.ق.ت</td>
+                                    <td>عرضه سهام به عموم <span class="badge badge-urgent">اختصاصی سهامی عام</span> است؛ در هیچ شرکت دیگری وجود ندارد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>پرداخت نقدی</strong></td>
+                                    <td>از مبلغ تعهد شده، <span class="badge badge-urgent">۳۵٪</span> باید <span class="highlight">نقداً</span> پرداخت گردد</td>
+                                    <td>ماده ۶ ل.ا.ق.ت</td>
+                                    <td>۳۵٪ از ۲۰٪ یعنی ۷٪ کل سرمایه نقداً پرداخت می‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>آورده غیرنقد</strong></td>
+                                    <td>آورده می‌تواند نقد (پول) یا غیرنقد (مال، ملک، ماشین) باشد</td>
+                                    <td>ماده ۷ ل.ا.ق.ت</td>
+                                    <td>اگر آورده غیرنقد باشد، باید تقویم و تسلیم شود <span class="icon-tag">ماده ۸ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل مؤسسین</strong></td>
+                                    <td>حداقل <span class="badge badge-urgent">۵ نفر</span> مؤسس</td>
+                                    <td>ماده ۴ ل.ا.ق.ت</td>
+                                    <td>نظر قوی: کمتر از ۵ نفر نیز ایرادی ندارد (۲ نفر کفایت می‌کند) زیرا ۵ نفر حداقل <span class="highlight">سهامداران</span> است نه مؤسسین</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مجوزها</strong></td>
+                                    <td>قبل از نشر آگهی پذیره‌نویسی، مجوز از <span class="highlight">اداره ثبت شرکت‌ها و بورس</span> لازم است</td>
+                                    <td>ماده ۵ ل.ا.ق.ت</td>
+                                    <td>اگر مجوزهای خاص لازم باشد (مثل بانکداری، بیمه) باید قبل از آگهی اخذ شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداکثر عرضه به عموم</strong></td>
+                                    <td>حداکثر <span class="badge badge-warning">۸۰٪</span> کل سرمایه می‌تواند به عموم عرضه شود</td>
+                                    <td>ماده ۶ ل.ا.ق.ت</td>
+                                    <td>برعکس مؤسسین که حداقل مشخص شده و حداکثر نه</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: پذیره‌نویسی و مجمع عمومی مؤسس</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>ماهیت پذیره‌نویسی</strong></td>
+                                    <td>عقد دو جانبه (ایجاب و قبول) بین مؤسسین و پذیره‌نویسان</td>
+                                    <td>ماده ۱۲ ل.ا.ق.ت</td>
+                                    <td>پذیره‌نویسی <span class="badge badge-good">عمل تجاری محسوب نمی‌شود</span> <span class="icon-tag">ماده ۲ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل پذیره‌نویسی</strong></td>
+                                    <td>مؤسسین می‌توانند حداقل خرید سهم را مشخص کنند <span class="icon-tag">مثلاً ۲۰۰ سهم</span></td>
+                                    <td>ماده ۱۲ ل.ا.ق.ت</td>
+                                    <td>این شرط در آگهی نشر داده می‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>احراز پرداخت</strong></td>
+                                    <td>پرداخت ۳۵٪ نقدی به حساب شرکت در شرف تأسیس نزد بانک</td>
+                                    <td>ماده ۱۳ ل.ا.ق.ت</td>
+                                    <td>بانک گواهی پرداخت را به مرجع ثبت تسلیم می‌نماید</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مجمع عمومی مؤسس</strong></td>
+                                    <td>جلسه‌ای که از اجتماع <span class="highlight">مؤسسین و پذیره‌نویسان</span> تشکیل می‌شود</td>
+                                    <td>ماده ۱۴ ل.ا.ق.ت</td>
+                                    <td>مؤسسین ≠ مجمع مؤسس؛ مؤسسین پیشقدم به تشکیل هستند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>وظایف مجمع مؤسس</strong></td>
+                                    <td>تأیید اساسنامه، انتخاب اولین هیئت مدیره و بازرسان، اعلام تشکیل شرکت</td>
+                                    <td>ماده ۱۴ ل.ا.ق.ت</td>
+                                    <td>پس از این جلسه، شرکت رسماً تشکیل می‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ایراد پذیره‌نویس</strong></td>
+                                    <td>پذیره‌نویس اگر در مجامع عمومی حاضر نشود، <span class="badge badge-bad">نمی‌تواند به مصوبات ایراد نماید</span></td>
+                                    <td>ماده ۱۵ ل.ا.ق.ت</td>
+                                    <td>امضای ورقه سهم به خودی خود مستلزم قبول اساسنامه و مصوبات مجامع است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدت پرداخت تعهد</strong></td>
+                                    <td>اساسنامه تعیین می‌کند؛ حداکثر <span class="badge badge-urgent">۵ سال</span></td>
+                                    <td>ماده ۱۶ ل.ا.ق.ت</td>
+                                    <td>اگر تعهد در موعد مقرر ادا نشود، سهام لغو می‌شود <span class="icon-tag">ماده ۱۷ ل.ا.ق.ت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: هیئت مدیره و مجامع عمومی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>حداقل اعضای هیئت مدیره</strong></td>
+                                    <td><span class="badge badge-urgent">۵ نفر</span> (حداقل ۳ نفر غیرموظف)</td>
+                                    <td>ماده ۱۰۷ ل.ا.ق.ت</td>
+                                    <td>حداقل ۳ نفر باید سهامدار باشند <span class="icon-tag">ماده ۱۱۱ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیر عامل</strong></td>
+                                    <td>یکی از اعضای هیئت مدیره به عنوان مدیرعامل انتخاب می‌شود</td>
+                                    <td>ماده ۱۱۹ ل.ا.ق.ت</td>
+                                    <td>مدیرعامل بالاترین مقام اجرایی شرکت است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مجمع عمومی عادی</strong></td>
+                                    <td>حداقل <span class="badge badge-warning">یک بار در سال</span> تشکیل می‌شود</td>
+                                    <td>ماده ۸۸ ل.ا.ق.ت</td>
+                                    <td>وظایف: تصویب ترازنامه، انتخاب هیئت مدیره و بازرسان، تعیین سود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مجمع عمومی فوق‌العاده</strong></td>
+                                    <td>برای تصمیمات مهم مثل <span class="highlight">تغییر اساسنامه، افزایش/کاهش سرمایه، انحلال</span></td>
+                                    <td>ماده ۸۳ ل.ا.ق.ت</td>
+                                    <td>تصمیمات با <span class="badge badge-urgent">۲/۳ آراء</span> حاضر در جلسه <span class="icon-tag">ماده ۸۴ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نصاب تشکیل مجمع</strong></td>
+                                    <td>عادی: <span class="badge badge-good">بیش از نصف سهام</span> | فوق‌العاده: <span class="badge badge-warning">بیش از نصف سهام</span></td>
+                                    <td>ماده ۷۶ ل.ا.ق.ت</td>
+                                    <td>اگر در دعوت اول نصاب حاصل نشد، در دعوت دوم با هر تعداد سهامدار تشکیل می‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>بازرسان</strong></td>
+                                    <td>حداقل <span class="badge badge-good">۲ بازرس اصلی و ۱ بازرس علی‌البدل</span></td>
+                                    <td>ماده ۱۳۲ ل.ا.ق.ت</td>
+                                    <td>بازرسان نمی‌توانند سهامدار باشند <span class="icon-tag">ماده ۱۳۳ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق رأی</strong></td>
+                                    <td>هر سهم یک رأی <span class="icon-tag">ماده ۶۴ ل.ا.ق.ت</span></td>
+                                    <td>ماده ۶۴ ل.ا.ق.ت</td>
+                                    <td>سهام ممتاز ممکن است حق رأی نداشته باشند <span class="icon-tag">ماده ۴۸ ل.ا.ق.ت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۴: افزایش و کاهش سرمایه</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>افزایش سرمایه</strong></td>
+                                    <td>با تصویب <span class="highlight">مجمع عمومی فوق‌العاده</span> و اجازه قانونی</td>
+                                    <td>ماده ۱۵۷ ل.ا.ق.ت</td>
+                                    <td>باید در روزنامه رسمی آگهی شود <span class="icon-tag">ماده ۱۵۸ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>کاهش سرمایه</strong></td>
+                                    <td>با تصویب مجمع عمومی فوق‌العاده و اجازه <span class="highlight">اداره ثبت</span></td>
+                                    <td>ماده ۱۶۹ ل.ا.ق.ت</td>
+                                    <td>کاهش سرمایه نباید از حداقل قانونی کمتر شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق تقدم خرید سهام</strong></td>
+                                    <td>سهامداران موجود <span class="badge badge-good">حق تقدم</span> در خرید سهام جدید دارند</td>
+                                    <td>ماده ۱۶۱ ل.ا.ق.ت</td>
+                                    <td>حق تقدم قابل انتقال است <span class="icon-tag">ماده ۱۶۳ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهام جایزه</strong></td>
+                                    <td>سهامی که از محل <span class="highlight">سود انباشته یا اندوخته</span> به سهامداران تعلق می‌گیرد</td>
+                                    <td>ماده ۱۶۶ ل.ا.ق.ت</td>
+                                    <td>سهام جایزه <span class="badge badge-good">رایگان</span> است و سرمایه شرکت را افزایش می‌دهد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل سرمایه</strong></td>
+                                    <td>حداقل سرمایه شرکت سهامی عام <span class="badge badge-urgent">۱ میلیارد ریال</span></td>
+                                    <td>ماده ۵ ل.ا.ق.ت</td>
+                                    <td>این مبلغ ممکن است تغییر کند؛ به آخرین قانون مراجعه شود</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۵: سهام و اوراق بهادار</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">نوع سهام</th>
+                                    <th class="group-clinical">ویژگی</th>
+                                    <th class="group-immuno">حقوق مالی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>سهام عادی</strong> <span class="icon-tag">رایج‌ترین</span></td>
+                                    <td>دارای حق رأی، سود، و حق تقدم</td>
+                                    <td><span class="badge badge-good">سود متغیر</span>، حق رأی</td>
+                                    <td>سهامدار عادی در تصمیمات شرکت حق رأی دارد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهام ممتاز</strong></td>
+                                    <td>مزیت در دریافت سود ثابت یا حق رأی بیشتر</td>
+                                    <td><span class="badge badge-medium">سود ثابت</span>، ممکن است حق رأی نداشته باشد</td>
+                                    <td>حداکثر <span class="badge badge-warning">نیمی</span> از سهام شرکت می‌تواند ممتاز باشد <span class="icon-tag">ماده ۴۸ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهام با نام</strong></td>
+                                    <td>نام صاحب سهم روی آن درج می‌شود</td>
+                                    <td>انتقال با <span class="highlight">ظهرنویسی و ثبت در دفتر شرکت</span></td>
+                                    <td>سهام شرکت سهامی خاص باید با نام باشد <span class="icon-tag">ماده ۲۵ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهام بی‌نام</strong></td>
+                                    <td>نام صاحب درج نمی‌شود</td>
+                                    <td>انتقال با <span class="highlight">مبادله فیزیکی</span></td>
+                                    <td>در سهامی عام مجاز است <span class="icon-tag">ماده ۲۵ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>اوراق قرضه</strong></td>
+                                    <td>ابزار استقراض شرکت</td>
+                                    <td><span class="badge badge-medium">سود ثابت</span>، بدون حق رأی</td>
+                                    <td>دارنده اوراق قرضه <span class="badge badge-good">دائن</span> شرکت است نه شریک</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۶: انحلال و تصفیه شرکت سهامی عام</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>انحلال شرکت</strong></td>
+                                    <td>پایان شخصیت حقوقی شرکت و شروع تصفیه</td>
+                                    <td>ماده ۱۹۹ ل.ا.ق.ت</td>
+                                    <td>انحلال ≠ ورشکستگی؛ انحلال می‌تواند بدون ورشکستگی باشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>علل انحلال</strong></td>
+                                    <td>انقضای مدت، تحقق هدف، ورشکستگی، تصمیم مجمع، حکم دادگاه</td>
+                                    <td>ماده ۲۰۰ ل.ا.ق.ت</td>
+                                    <td>انحلال با <span class="highlight">تصمیم مجمع عمومی فوق‌العاده</span> <span class="icon-tag">ماده ۲۰۱ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تصفیه</strong></td>
+                                    <td>اداره امور شرکت پس از انحلال برای تسویه بدهی‌ها و تقسیم باقیمانده</td>
+                                    <td>ماده ۲۰۴ ل.ا.ق.ت</td>
+                                    <td>تصفیه‌کنندگان توسط مجمع انتخاب می‌شوند <span class="icon-tag">ماده ۲۰۵ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ترتیب پرداخت</strong></td>
+                                    <td>۱- هزینه تصفیه | ۲- دیون شرکت | ۳- سهامداران</td>
+                                    <td>ماده ۲۱۲ ل.ا.ق.ت</td>
+                                    <td>سهامداران <span class="badge badge-verybad">آخرین</span> نفراتی هستند که پرداخت می‌شوند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ورشکستگی</strong></td>
+                                    <td>توقف کلی پرداخت دیون شرکت</td>
+                                    <td>ماده ۴۱۱ ق.ت</td>
+                                    <td>ورشکستگی شرکت توسط <span class="highlight">دادگاه</span> صادر می‌شود</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 3: SAHAMI KHAS ============ -->
+        <div id="sahami_khas" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: تفاوت شرکت سهامی عام و خاص</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">معیار</th>
+                                    <th class="group-immuno">شرکت سهامی عام</th>
+                                    <th class="group-prognosis">شرکت سهامی خاص</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>حداقل سهامدار</strong></td>
+                                    <td><span class="badge badge-urgent">۵ نفر</span></td>
+                                    <td><span class="badge badge-good">۳ نفر</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>عرضه به عموم</strong></td>
+                                    <td><span class="badge badge-good">بله</span> (حداکثر ۸۰٪)</td>
+                                    <td><span class="badge badge-poor">خیر</span> (فقط بین سهامداران)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ثبت در بورس</strong></td>
+                                    <td><span class="badge badge-good">می‌تواند</span></td>
+                                    <td><span class="badge badge-poor">نمی‌تواند</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل سرمایه</strong></td>
+                                    <td><span class="badge badge-urgent">۱ میلیارد ریال</span></td>
+                                    <td><span class="badge badge-good">۱۰۰ میلیون ریال</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نوع سهام</strong></td>
+                                    <td>با نام و بی‌نام</td>
+                                    <td><span class="badge badge-warning">فقط با نام</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>پذیره‌نویسی</strong></td>
+                                    <td><span class="badge badge-good">بله</span> (عرضه عمومی)</td>
+                                    <td><span class="badge badge-poor">خیر</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مجمع عمومی مؤسس</strong></td>
+                                    <td><span class="badge badge-good">بله</span></td>
+                                    <td><span class="badge badge-poor">خیر</span> (فقط اساسنامه امضا می‌شود)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>بازرس</strong></td>
+                                    <td><span class="badge badge-urgent">حداقل ۲ بازرس + ۱ علی‌البدل</span></td>
+                                    <td><span class="badge badge-good">حداقل ۱ بازرس</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>هیئت مدیره</strong></td>
+                                    <td>حداقل ۵ نفر</td>
+                                    <td>حداقل ۳ نفر</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال سهام</strong></td>
+                                    <td>آزاد (برای سهام بی‌نام)</td>
+                                    <td><span class="badge badge-warning">با رضایت اکثریت سهامداران</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: حقوق و تکالیف سهامداران</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">حق/تکلیف</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>حق رأی</strong></td>
+                                    <td>هر سهم یک رأی</td>
+                                    <td>ماده ۶۴ ل.ا.ق.ت</td>
+                                    <td>سهام ممتاز ممکن است فاقد حق رأی باشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق دریافت سود</strong></td>
+                                    <td>سهامدار حق دارد سود تصویب شده مجمع عمومی را دریافت نماید</td>
+                                    <td>ماده ۶۵ ل.ا.ق.ت</td>
+                                    <td>سود باید در مجمع عمومی تصویب شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق تقدم</strong></td>
+                                    <td>در افزایش سرمایه، سهامداران موجود حق تقدم دارند</td>
+                                    <td>ماده ۱۶۱ ل.ا.ق.ت</td>
+                                    <td>حق تقدم قابل انتقال است <span class="icon-tag">ماده ۱۶۳ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق اطلاع</strong></td>
+                                    <td>سهامدار حق دارد از صورت‌های مالی و گزارش‌ها اطلاع یابد</td>
+                                    <td>ماده ۶۶ ل.ا.ق.ت</td>
+                                    <td>بازرسان نماینده این حق هستند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تکلیف پرداخت</strong></td>
+                                    <td>سهامدار باید مبلغ اسمی سهام را پرداخت نماید</td>
+                                    <td>ماده ۶۷ ل.ا.ق.ت</td>
+                                    <td>عدم پرداخت = لغو سهام <span class="icon-tag">ماده ۱۷ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق حضور در مجمع</strong></td>
+                                    <td>سهامدار حق دارد در مجامع عمومی شرکت کند</td>
+                                    <td>ماده ۶۸ ل.ا.ق.ت</td>
+                                    <td>می‌تواند وکیل بفرستد <span class="icon-tag">ماده ۷۰ ل.ا.ق.ت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: انتقال سهام و حق تقدم</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">شرکت عام</th>
+                                    <th class="group-prognosis">شرکت خاص</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>انتقال سهام بی‌نام</strong></td>
+                                    <td>با مبادله فیزیکی سند</td>
+                                    <td><span class="badge badge-good">آزاد</span></td>
+                                    <td><span class="badge badge-poor">مجاز نیست</span> (فقط با نام)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال سهام با نام</strong></td>
+                                    <td>با ظهرنویسی و ثبت در دفتر شرکت</td>
+                                    <td><span class="badge badge-good">آزاد</span></td>
+                                    <td><span class="badge badge-warning">با رضایت اکثریت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق تقدم</strong></td>
+                                    <td>حق خرید سهام جدید قبل از سایرین</td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدت اعمال حق تقدم</strong></td>
+                                    <td>۶۰ روز از تاریخ ثبت افزایش سرمایه</td>
+                                    <td><span class="badge badge-good">۶۰ روز</span></td>
+                                    <td><span class="badge badge-good">۶۰ روز</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال حق تقدم</strong></td>
+                                    <td>قابل خرید و فروش در بورس</td>
+                                    <td><span class="badge badge-good">بله</span></td>
+                                    <td><span class="badge badge-warning">با رضایت شرکت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۴: اوراق بهادار و اسناد شرکت</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">سند/ورقه</th>
+                                    <th class="group-clinical">تعریف</th>
+                                    <th class="group-immuno">ویژگی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>سهام</strong></td>
+                                    <td>ورقه‌ای که نشان‌دهنده مشارکت در سرمایه شرکت است</td>
+                                    <td>قابل تقسیم، انتقال، وثیقه</td>
+                                    <td>سهم واحد سرمایه شرکت است <span class="icon-tag">ماده ۲۴ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>اوراق قرضه</strong></td>
+                                    <td>ابزار استقراض شرکت با سود ثابت</td>
+                                    <td>بدون حق رأی، سود ثابت</td>
+                                    <td>دارنده اوراق قرضه <span class="highlight">دائن</span> است نه شریک</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>اساسنامه</strong></td>
+                                    <td>سند مادر شرکت شامل موضوع، مرکز، سرمایه، تعداد سهام</td>
+                                    <td>تغییر با مجمع فوق‌العاده</td>
+                                    <td>اساسنامه <span class="badge badge-urgent">سند رسمی</span> شرکت است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>آگهی تأسیس</strong></td>
+                                    <td>آگهی ثبت شرکت در روزنامه رسمی</td>
+                                    <td>اعلان عمومی تشکیل شرکت</td>
+                                    <td>تاریخ انتشار آگهی = تاریخ تأسیس رسمی</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>صورتجلسه</strong></td>
+                                    <td>نوشته‌ای که مصوبات مجامع عمومی در آن ثبت می‌شود</td>
+                                    <td>باید به امضای هیئت رئیسه برسد</td>
+                                    <td>صورتجلسه باید در دفتر ثبت شرکت‌ها ثبت شود</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 4: MASOOLIYAT MAHDOOD ============ -->
+        <div id="masooliyat" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: تشکیل شرکت با مسئولیت محدود</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>حداقل شرکا</strong></td>
+                                    <td><span class="badge badge-urgent">۲ نفر</span></td>
+                                    <td>ماده ۹۴ ق.ت</td>
+                                    <td>حداکثر تعداد شرکا محدودیت ندارد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سرمایه</strong></td>
+                                    <td>به <span class="highlight">سهم الشرکه</span> تقسیم نمی‌شود بلکه به صورت سهم الشرکه است</td>
+                                    <td>ماده ۹۵ ق.ت</td>
+                                    <td>سهم الشرکه ≠ سهام؛ قابل تقسیم به واحدهای مساوی نیست</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل سرمایه</strong></td>
+                                    <td>قانون حداقل سرمایه تعیین نکرده</td>
+                                    <td>ماده ۹۵ ق.ت</td>
+                                    <td>در عمل معمولاً ۱ میلیون ریال</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت‌نامه</strong></td>
+                                    <td>سند تشکیل شرکت (معادل اساسنامه در سهامی‌ها)</td>
+                                    <td>ماده ۹۶ ق.ت</td>
+                                    <td>شرکت‌نامه باید به امضای همه شرکا برسد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>«شرکت با مسئولیت محدود...» + نام مستقل</td>
+                                    <td>ماده ۹۵ ق.ت</td>
+                                    <td>نام نباید شامل نام هیچ یک از شرکا باشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مسئولیت</strong></td>
+                                    <td>هر شریک فقط به میزان <span class="highlight">آورده خود</span> مسئول است</td>
+                                    <td>ماده ۹۴ ق.ت</td>
+                                    <td>مهم‌ترین ویژگی: مسئولیت <span class="badge badge-good">محدود به آورده</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: مقایسه با مسئولیت محدود و سهامی خاص</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">معیار</th>
+                                    <th class="group-immuno">با مسئولیت محدود</th>
+                                    <th class="group-prognosis">سهامی خاص</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>حداقل شرکا/سهامداران</strong></td>
+                                    <td><span class="badge badge-good">۲ نفر</span></td>
+                                    <td><span class="badge badge-good">۳ نفر</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سرمایه</strong></td>
+                                    <td>سهم الشرکه (تقسیم نمی‌شود)</td>
+                                    <td>سهام (تقسیم به واحدهای مساوی)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سند تشکیل</strong></td>
+                                    <td>شرکت‌نامه</td>
+                                    <td>اساسنامه</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال سهم</strong></td>
+                                    <td><span class="badge badge-warning">با رضایت اکثریت شرکا</span></td>
+                                    <td><span class="badge badge-warning">با رضایت اکثریت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>هیئت مدیره</strong></td>
+                                    <td>مدیر/مدیران (نه هیئت مدیره)</td>
+                                    <td>هیئت مدیره حداقل ۳ نفر</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>بازرس</strong></td>
+                                    <td><span class="badge badge-poor">الزامی نیست</span></td>
+                                    <td><span class="badge badge-good">حداقل ۱ بازرس</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>مستقل از نام شرکا</td>
+                                    <td>مستقل از نام سهامداران</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>عرضه به عموم</strong></td>
+                                    <td><span class="badge badge-poor">خیر</span></td>
+                                    <td><span class="badge badge-poor">خیر</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شخصیت حقوقی</strong></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مسئولیت</strong></td>
+                                    <td>محدود به آورده</td>
+                                    <td>محدود به سهام</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: مدیران و حقوق شرکا</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>مدیر/مدیران</strong></td>
+                                    <td>شرکت توسط یک یا چند مدیر اداره می‌شود</td>
+                                    <td>ماده ۱۰۲ ق.ت</td>
+                                    <td>مدیر می‌تواند از خارج شرکا انتخاب شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتخاب مدیر</strong></td>
+                                    <td>توسط <span class="highlight">شرکت‌نامه</span> یا <span class="highlight">اکثریت شرکا</span></td>
+                                    <td>ماده ۱۰۲ ق.ت</td>
+                                    <td>اگر در شرکت‌نامه ذکر نشده، اکثریت تعیین می‌کند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق رأی</strong></td>
+                                    <td>به نسبت سهم الشرکه</td>
+                                    <td>ماده ۱۰۰ ق.ت</td>
+                                    <td>هر ۱۰۰۰ ریال یک رأی <span class="icon-tag">مگر آنکه خلاف آن شرط شده باشد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال سهم الشرکه</strong></td>
+                                    <td>با رضایت <span class="badge badge-warning">اکثریت شرکا</span></td>
+                                    <td>ماده ۱۰۴ ق.ت</td>
+                                    <td>شرکا حق <span class="highlight">شفعه</span> دارند <span class="icon-tag">ماده ۱۰۵ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق شفعه</strong></td>
+                                    <td>شرکا حق تقدم در خرید سهم الشرکه منتقل‌شده را دارند</td>
+                                    <td>ماده ۱۰۵ ق.ت</td>
+                                    <td>مدت شفعه: <span class="badge badge-urgent">۱۵ روز</span> از تاریخ اطلاع</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>خروج شریک</strong></td>
+                                    <td>شریک می‌تواند با <span class="highlight">۶ ماه قبل اطلاع</span> از شرکت خارج شود</td>
+                                    <td>ماده ۱۰۶ ق.ت</td>
+                                    <td>اگر مدت شرکت معین باشد، خروج قبل از موعد نیازمند رضایت سایرین است</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۴: انحلال شرکت با مسئولیت محدود</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">علت انحلال</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>انقضای مدت</strong></td>
+                                    <td>اگر مدت در شرکت‌نامه ذکر شده باشد</td>
+                                    <td>ماده ۱۰۸ ق.ت</td>
+                                    <td>قابل تمدید با رضایت اکثریت</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تحقق هدف</strong></td>
+                                    <td>اگر شرکت برای هدف خاصی تشکیل شده باشد</td>
+                                    <td>ماده ۱۰۸ ق.ت</td>
+                                    <td>مثال: شرکت برای ساخت یک پروژه</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ورشکستگی</strong></td>
+                                    <td>توقف کلی پرداخت دیون</td>
+                                    <td>ماده ۱۰۸ ق.ت</td>
+                                    <td>توسط دادگاه صادر می‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تصمیم شرکا</strong></td>
+                                    <td>با رضایت <span class="badge badge-urgent">۲/۳ شرکا</span></td>
+                                    <td>ماده ۱۰۹ ق.ت</td>
+                                    <td>اگر تعداد شرکا ۲ نفر باشد، با اتفاق آرا</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>فوت شریک</strong></td>
+                                    <td>اگر تعداد شرکا به <span class="badge badge-verybad">۱ نفر</span> برسد</td>
+                                    <td>ماده ۱۱۰ ق.ت</td>
+                                    <td>شرکت منحل می‌شود مگر اینکه ورثه ادامه دهند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تصفیه</strong></td>
+                                    <td>اداره امور پس از انحلال</td>
+                                    <td>ماده ۱۱۲ ق.ت</td>
+                                    <td>تصفیه‌کننده توسط شرکا انتخاب می‌شود</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۵: نکات کلیدی با مسئولیت محدود</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">نکته</th>
+                                    <th class="group-prognosis">توضیح</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>شرکت‌نامه</strong></td>
+                                    <td>سند مادر شرکت؛ شامل نام، موضوع، مرکز، سرمایه، سهم الشرکه هر شریک، مدیران</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تغییر شرکت‌نامه</strong></td>
+                                    <td>با رضایت <span class="highlight">۲/۳ شرکا</span> <span class="icon-tag">ماده ۱۰۱ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعهد سرمایه</strong></td>
+                                    <td>شرکا باید سرمایه خود را کاملاً پرداخت کنند <span class="icon-tag">ماده ۹۹ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>آورده غیرنقد</strong></td>
+                                    <td>باید تقویم و تسلیم شود <span class="icon-tag">ماده ۹۸ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سود و زیان</strong></td>
+                                    <td>به نسبت سهم الشرکه تقسیم می‌شود <span class="icon-tag">ماده ۱۰۳ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>وراث شریک</strong></td>
+                                    <td>وراث می‌توانند وارد شرکت شوند یا سهم الشرکه را دریافت کنند <span class="icon-tag">ماده ۱۰۷ ق.ت</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 5: TAZAMONI & NESBI ============ -->
+        <div id="tazamoni" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: شرکت تضامنی – تشکیل و ویژگی‌ها</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>تعریف</strong></td>
+                                    <td>شرکتی که برای امور تجارتی تشکیل می‌شود و <span class="highlight">شرکا مسئولیت تضامنی</span> دارند</td>
+                                    <td>ماده ۱۱۶ ق.ت</td>
+                                    <td>شرکت تضامنی <span class="badge badge-urgent">شخصی‌ترین</span> شرکت تجاری است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل شرکا</strong></td>
+                                    <td><span class="badge badge-urgent">۲ نفر</span></td>
+                                    <td>ماده ۱۱۶ ق.ت</td>
+                                    <td>همه شرکا باید تاجر باشند <span class="icon-tag">ماده ۱۱۷ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مسئولیت</strong></td>
+                                    <td>شرکا <span class="badge badge-verybad">مسئولیت تضامنی و نامحدود</span> دارند</td>
+                                    <td>ماده ۱۱۶ ق.ت</td>
+                                    <td>هر شریک مسئول <span class="highlight">تمام</span> دیون شرکت است <span class="icon-tag">مسئولیت تضامنی</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>«شرکت تضامنی» + <span class="highlight">نام همه شرکا</span></td>
+                                    <td>ماده ۱۱۸ ق.ت</td>
+                                    <td>اگر نام شریک در نام شرکت بیاید، در حکم <span class="badge badge-urgent">ضامن</span> است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت‌نامه</strong></td>
+                                    <td>باید شامل نام، موضوع، مرکز، سرمایه، سهم الشرکه، نام مدیران باشد</td>
+                                    <td>ماده ۱۱۹ ق.ت</td>
+                                    <td>شرکت‌نامه باید به امضای همه شرکا برسد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیران</strong></td>
+                                    <td>شرکت توسط یک یا چند مدیر اداره می‌شود</td>
+                                    <td>ماده ۱۲۲ ق.ت</td>
+                                    <td>مدیر می‌تواند از خارج شرکا باشد <span class="icon-tag">مگر آنکه خلاف آن شرط شده باشد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق رأی</strong></td>
+                                    <td>هر شریک یک رأی دارد <span class="icon-tag">مگر آنکه خلاف آن شرط شده باشد</span></td>
+                                    <td>ماده ۱۲۳ ق.ت</td>
+                                    <td>تصمیمات با <span class="badge badge-warning">اکثریت</span> (مگر موارد خاص)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: مقایسه شرکت تضامنی و نسبی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">معیار</th>
+                                    <th class="group-immuno">شرکت تضامنی</th>
+                                    <th class="group-prognosis">شرکت نسبی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>مبنای قانونی</strong></td>
+                                    <td>ماده ۱۱۶ تا ۱۴۷ ق.ت</td>
+                                    <td>ماده ۱۸۳ تا ۱۹۵ ق.ت</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مسئولیت</strong></td>
+                                    <td><span class="badge badge-verybad">تضامنی و نامحدود</span></td>
+                                    <td><span class="badge badge-bad">نسبی به سهم الشرکه</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکا باید تاجر باشند</strong></td>
+                                    <td><span class="badge badge-urgent">بله</span></td>
+                                    <td><span class="badge badge-good">خیر</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>شامل نام همه شرکا</td>
+                                    <td>شامل نام همه شرکا</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال سهم</strong></td>
+                                    <td><span class="badge badge-warning">با رضایت اکثریت</span></td>
+                                    <td><span class="badge badge-warning">با رضایت اکثریت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق شفعه</strong></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انحلال با فوت</strong></td>
+                                    <td><span class="badge badge-urgent">شرکت منحل می‌شود</span> <span class="icon-tag">مگر آنکه شرکت‌نامه خلاف آن را مقرر داشته باشد</span></td>
+                                    <td><span class="badge badge-urgent">شرکت منحل می‌شود</span> <span class="icon-tag">مگر آنکه شرکت‌نامه خلاف آن را مقرر داشته باشد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ادعای ورشکستگی</strong></td>
+                                    <td><span class="badge badge-good">هر شریک یا دائن می‌تواند</span></td>
+                                    <td><span class="badge badge-good">هر شریک یا دائن می‌تواند</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شخصیت حقوقی</strong></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: انحلال شرکت تضامنی و نسبی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">علت انحلال</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>انقضای مدت</strong></td>
+                                    <td>اگر مدت در شرکت‌نامه ذکر شده باشد</td>
+                                    <td>ماده ۱۳۹ ق.ت</td>
+                                    <td>قابل تمدید با رضایت اکثریت</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تحقق هدف</strong></td>
+                                    <td>اگر برای هدف خاص تشکیل شده باشد</td>
+                                    <td>ماده ۱۳۹ ق.ت</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ورشکستگی</strong></td>
+                                    <td>توقف کلی پرداخت دیون</td>
+                                    <td>ماده ۱۳۹ ق.ت</td>
+                                    <td>توسط دادگاه صادر می‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>فوت شریک</strong></td>
+                                    <td>شرکت منحل می‌شود <span class="badge badge-warning">مگر آنکه شرکت‌نامه خلاف آن را مقرر داشته باشد</span></td>
+                                    <td>ماده ۱۴۰ ق.ت</td>
+                                    <td>اگر ورثه ادامه دهند، شرکت باقی می‌ماند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>خروج شریک</strong></td>
+                                    <td>با رضایت اکثریت یا حکم دادگاه</td>
+                                    <td>ماده ۱۴۱ ق.ت</td>
+                                    <td>شریک خارج‌شده مسئول دیون قبل از خروج است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تصمیم شرکا</strong></td>
+                                    <td>با رضایت <span class="badge badge-urgent">اتفاق آرا</span></td>
+                                    <td>ماده ۱۳۹ ق.ت</td>
+                                    <td>در تضامنی و نسبی انحلال با <span class="highlight">اتفاق آرا</span> است نه اکثریت</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تصفیه</strong></td>
+                                    <td>اداره امور پس از انحلال</td>
+                                    <td>ماده ۱۴۳ ق.ت</td>
+                                    <td>تصفیه‌کننده توسط شرکا انتخاب می‌شود</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۴: نکات High-Yield تضامنی و نسبی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">نکته</th>
+                                    <th class="group-prognosis">توضیح</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>شرکت تضامنی و صرافی</strong></td>
+                                    <td>اشخاصی که می‌خواهند به کار صرافی اشتغال داشته باشند <span class="badge badge-urgent">باید شرکت تضامنی</span> تشکیل دهند <span class="icon-tag">نکته مهم امتحانی</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مسئولیت تضامنی</strong></td>
+                                    <td>هر شریک مسئول <span class="highlight">تمام</span> دیون شرکت است؛ دائن می‌تواند به هر یک از شرکا مراجعه کند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت در حکم تضامنی</strong></td>
+                                    <td>اگر شرکتی فاقد عنوان باشد، در حکم شرکت تضامنی است <span class="icon-tag">ماده ۲۲۰ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تاجر بودن</strong></td>
+                                    <td>در تضامنی همه شرکا باید تاجر باشند؛ در نسبی این شرط نیست</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام و مسئولیت</strong></td>
+                                    <td>اگر نام شریک در نام شرکت باشد، در حکم ضامن است حتی اگر شریک ضامن نباشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شفعه</strong></td>
+                                    <td>در تضامنی و نسبی شرکا حق شفعه دارند <span class="icon-tag">مشابه با مسئولیت محدود</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ادعای ورشکستگی</strong></td>
+                                    <td>در تضامنی و نسبی هر شریک یا دائن می‌تواند ورشکستگی شرکت را اقامه کند</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 6: MOKHTALET ============ -->
+        <div id="mokhtalet" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: مقایسه شرکت مختلط سهامی و غیرسهامی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">معیار</th>
+                                    <th class="group-immuno">مختلط غیرسهامی</th>
+                                    <th class="group-prognosis">مختلط سهامی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>مبنای قانونی</strong></td>
+                                    <td>ماده ۱۴۸ تا ۱۶۱ ق.ت</td>
+                                    <td>ماده ۱۶۲ تا ۱۸۲ ق.ت</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکای ضامن</strong></td>
+                                    <td><span class="badge badge-verybad">مسئولیت تضامنی و نامحدود</span></td>
+                                    <td><span class="badge badge-verybad">مسئولیت تضامنی و نامحدود</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکای دیگر</strong></td>
+                                    <td>با مسئولیت محدود به <span class="highlight">سهم الشرکه</span></td>
+                                    <td>سهامداران با مسئولیت محدود به <span class="highlight">سهام</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>شامل نام <span class="highlight">شرکای ضامن</span></td>
+                                    <td>شامل نام <span class="highlight">شرکای ضامن</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سرمایه</strong></td>
+                                    <td>سهم الشرکه</td>
+                                    <td>سهام (تقسیم به واحدهای مساوی)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انتقال سهم</strong></td>
+                                    <td>با رضایت اکثریت</td>
+                                    <td>آزاد (برای سهام بی‌نام)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیران</strong></td>
+                                    <td>فقط از <span class="badge badge-urgent">شرکای ضامن</span></td>
+                                    <td>فقط از <span class="badge badge-urgent">شرکای ضامن</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>بازرس</strong></td>
+                                    <td><span class="badge badge-poor">الزامی نیست</span></td>
+                                    <td><span class="badge badge-good">حداقل ۱ بازرس</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>عرضه به عموم</strong></td>
+                                    <td><span class="badge badge-poor">خیر</span></td>
+                                    <td><span class="badge badge-good">بله</span> (سهام شرکای غیرضامن)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شخصیت حقوقی</strong></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: ویژگی‌های کلیدی شرکت‌های مختلط</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-clinical">شرح</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>شرکای ضامن</strong></td>
+                                    <td>مسئولیت <span class="highlight">تضامنی و نامحدود</span> دارند</td>
+                                    <td>ماده ۱۴۸ ق.ت</td>
+                                    <td>شرکای ضامن باید تاجر باشند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکای با مسئولیت محدود</strong></td>
+                                    <td>مسئولیت محدود به آورده/سهام خود</td>
+                                    <td>ماده ۱۴۸ ق.ت</td>
+                                    <td>نام آن‌ها در نام شرکت نمی‌آید</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیریت</strong></td>
+                                    <td>فقط <span class="badge badge-urgent">شرکای ضامن</span> می‌توانند مدیر باشند</td>
+                                    <td>ماده ۱۵۲ ق.ت</td>
+                                    <td>شرکای با مسئولیت محدود <span class="badge badge-poor">نمی‌توانند مدیر شوند</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق رأی</strong></td>
+                                    <td>شرکای ضامن: هر کدام یک رأی | شرکای محدود: به نسبت سهم</td>
+                                    <td>ماده ۱۵۳ ق.ت</td>
+                                    <td>شرکای محدود در امور مدیریتی حق رأی ندارند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انحلال</strong></td>
+                                    <td>اگر همه شرکای ضامن خارج شوند یا منحل شوند</td>
+                                    <td>ماده ۱۵۵ ق.ت</td>
+                                    <td>خروج شرکای محدود باعث انحلال نمی‌شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تصفیه</strong></td>
+                                    <td>ابتدا بدهی‌ها، سپس سهم الشرکه/سهام شرکای محدود، در نهایت شرکای ضامن</td>
+                                    <td>ماده ۱۵۶ ق.ت</td>
+                                    <td>شرکای محدود <span class="badge badge-good">مقدم</span> بر شرکای ضامن هستند</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: نکات High-Yield شرکت‌های مختلط</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">نکته</th>
+                                    <th class="group-prognosis">توضیح</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>نام شرکت</strong></td>
+                                    <td>نام شرکت <span class="highlight">فقط</span> شامل نام شرکای ضامن است؛ نام شرکای محدود نمی‌آید</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیریت انحصاری ضامن‌ها</strong></td>
+                                    <td>فقط شرکای ضامن حق مدیریت دارند؛ این تضمینی است برای دائن‌ها</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت مختلط سهامی</strong></td>
+                                    <td>سهامداران غیرضامن می‌توانند سهام خود را آزادانه انتقال دهند <span class="icon-tag">مشابه سهامی عام</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ترتیب پرداخت</strong></td>
+                                    <td>در تصفیه: ۱- دیون | ۲- شرکای محدود | ۳- شرکای ضامن</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تفاوت با سهامی</strong></td>
+                                    <td>در مختلط سهامی، سهامداران غیرضامن مسئولیت محدود دارند اما در سهامی عام همه مسئولیت محدود دارند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نکته امتحانی طلایی</strong></td>
+                                    <td>شرکت مختلط <span class="badge badge-warning">ترکیبی</span> از تضامنی و با مسئولیت محدود/سهامی است</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 7: TAAVONI ============ -->
+        <div id="taavoni" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: انواع و ویژگی‌های شرکت تعاونی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">نوع تعاونی</th>
+                                    <th class="group-clinical">تعریف/ویژگی</th>
+                                    <th class="group-immuno">مبنای قانونی</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>تعاونی تولید</strong></td>
+                                    <td>شرکتی که اعضای آن برای <span class="highlight">تولید کالا یا خدمات</span> با یکدیگر همکاری می‌کنند</td>
+                                    <td>ماده ۱ ق.ب.ت</td>
+                                    <td>هدف: افزایش توان تولیدی اعضا</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعاونی مصرف</strong></td>
+                                    <td>شرکتی که اعضای آن برای <span class="highlight">تأمین نیازهای مصرفی</span> با هم همکاری می‌کنند</td>
+                                    <td>ماده ۱ ق.ب.ت</td>
+                                    <td>مثال: تعاونی مسکن، تعاونی مصرف کارکنان</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعاونی سهامی عام</strong></td>
+                                    <td>شرکتی که سهام آن بین عموم عرضه می‌شود اما بر مبنای اصول تعاونی</td>
+                                    <td>ماده ۱ ق.ب.ت</td>
+                                    <td>ترکیب سهامی و تعاونی</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعاونی فراگیر ملی</strong></td>
+                                    <td>شرکتی که <span class="badge badge-urgent">۷۰٪</span> اعضای آن از <span class="highlight">دهک‌های پایین</span> باشند</td>
+                                    <td>بند ۱۰ ماده ۱ ق.ب.ت</td>
+                                    <td>هدف: خصوصی‌سازی و کم کردن فاصله طبقاتی</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعاونی صنفی</strong></td>
+                                    <td>تشکیل بین صنوف خاص (کشاورزان، کارگران، هنرمندان)</td>
+                                    <td>قانون بخش تعاون</td>
+                                    <td>عضویت بر اساس صنف و شغل</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: تفاوت شرکت تعاونی و سایر شرکت‌ها</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">معیار</th>
+                                    <th class="group-immuno">شرکت تعاونی</th>
+                                    <th class="group-prognosis">شرکت‌های تجاری دیگر</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>هدف اصلی</strong></td>
+                                    <td><span class="badge badge-good">رفع نیاز اعضا + خصوصی‌سازی</span></td>
+                                    <td><span class="badge badge-medium">انتفاع و سود</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>عضویت</strong></td>
+                                    <td>بر اساس <span class="highlight">صنف و نیاز</span></td>
+                                    <td>بر اساس سرمایه‌گذاری</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق رأی</strong></td>
+                                    <td><span class="badge badge-good">هر عضو یک رأی</span> (محدودیت در تعداد سهام)</td>
+                                    <td>به نسبت سهام/سهم الشرکه</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سود</strong></td>
+                                    <td>بین اعضا تقسیم می‌شود <span class="icon-tag">مطابق آیین‌نامه</span></td>
+                                    <td>به نسبت سهام</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مبنای قانونی</strong></td>
+                                    <td>قانون بخش تعاون اقتصاد ج.ا.ا ۱۳۷۰</td>
+                                    <td>قانون تجارت ۱۳۱۱</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نظارت</strong></td>
+                                    <td><span class="highlight">وزارت تعاون، کار و رفاه اجتماعی</span></td>
+                                    <td>اداره ثبت شرکت‌ها</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شخصیت حقوقی</strong></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                    <td><span class="badge badge-good">دارد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعداد اعضا</strong></td>
+                                    <td>حداقل <span class="badge badge-urgent">۷ نفر</span> <span class="icon-tag">ماده ۸ ق.ب.ت</span></td>
+                                    <td>بسته به نوع (۲ تا ۵ نفر)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============ PAGE 8: HIGH-YIELD ============ -->
+        <div id="highyield" class="page-section">
+            <div class="container">
+                <a href="#" class="back-btn" onclick="showPage('main-menu'); return false;"><span>←</span> بازگشت به منو</a>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۱: نکات High-Yield امتحانی – تفاوت‌های افتراقی کلیدی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-immuno">نکته افتراقی ۱</th>
+                                    <th class="group-prognosis">نکته افتراقی ۲</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>سهامی عام vs خاص</strong></td>
+                                    <td>عام: <span class="badge badge-good">عرضه به عموم + ۵ سهامدار</span></td>
+                                    <td>خاص: <span class="badge badge-poor">بدون عرضه عمومی + ۳ سهامدار</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تضامنی vs نسبی</strong></td>
+                                    <td>تضامنی: <span class="badge badge-verybad">مسئولیت تضامنی نامحدود + همه باید تاجر باشند</span></td>
+                                    <td>نسبی: <span class="badge badge-bad">مسئولیت نسبی + نیازی به تاجر بودن نیست</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهامی vs با مسئولیت محدود</strong></td>
+                                    <td>سهامی: <span class="badge badge-good">سرمایه به سهام تقسیم می‌شود</span></td>
+                                    <td>با مسئولیت محدود: <span class="badge badge-warning">سهم الشرکه تقسیم نمی‌شود</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مختلط سهامی vs غیرسهامی</strong></td>
+                                    <td>سهامی: <span class="badge badge-good">سهامداران غیرضامن + عرضه به عموم ممکن</span></td>
+                                    <td>غیرسهامی: <span class="badge badge-warning">شرکای با مسئولیت محدود به سهم الشرکه</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شخصی vs سرمایه‌ای</strong></td>
+                                    <td>شخصی (تضامنی/نسبی): <span class="badge badge-urgent">عنصر شرکا اول اهمیت</span></td>
+                                    <td>سرمایه‌ای (سهامی/با مسئولیت): <span class="badge badge-good">عنصر سرمایه اول اهمیت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت تجاری vs مدنی</strong></td>
+                                    <td>تجاری: <span class="badge badge-good">شخصیت حقوقی + دارایی اختصاصی</span></td>
+                                    <td>مدنی: <span class="badge badge-poor">فاقد شخصیت حقوقی + فاقد دارایی اختصاصی</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق رأی سهامی vs با مسئولیت</strong></td>
+                                    <td>سهامی: <span class="badge badge-good">هر سهم یک رأی</span></td>
+                                    <td>با مسئولیت: <span class="badge badge-warning">هر ۱۰۰۰ ریال یک رأی</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انحلال تضامنی/نسبی</strong></td>
+                                    <td>تصمیم شرکا: <span class="badge badge-urgent">اتفاق آرا</span></td>
+                                    <td>سهامی: <span class="badge badge-warning">۲/۳ آراء فوق‌العاده</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>بازرس سهامی عام vs خاص</strong></td>
+                                    <td>عام: <span class="badge badge-urgent">۲ بازرس اصلی + ۱ علی‌البدل</span></td>
+                                    <td>خاص: <span class="badge badge-good">حداقل ۱ بازرس</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیریت مختلط</strong></td>
+                                    <td>فقط <span class="badge badge-urgent">شرکای ضامن</span> می‌توانند مدیر شوند</td>
+                                    <td>شرکای محدود <span class="badge badge-poor">نمی‌توانند مدیر شوند</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۲: نکات High-Yield – مواد قانونی کلیدی</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">ماده قانونی</th>
+                                    <th class="group-immuno">موضوع</th>
+                                    <th class="group-prognosis">نکته امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>ماده ۲۰ ق.ت</strong></td>
+                                    <td>شرکت‌های تجاری <span class="highlight">همیشه</span> به موجب عقد (قرارداد) تشکیل می‌شوند</td>
+                                    <td>تفاوت با شرکت مدنی که ممکن است طریق دیگر تشکیل شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۵۹۰ ق.ت</strong></td>
+                                    <td>اقامتگاه شرکت = <span class="highlight">مرکز اداره</span> شرکت</td>
+                                    <td>تخصیص یافته از ماده ۱۰۰۲ ق.مدنی؛ در حقوق مدنی = مرکز عملیات</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۵۹۱ ق.ت</strong></td>
+                                    <td>تابعیت شرکت = تابعیت کشوری که <span class="highlight">اقامتگاه</span> شرکت در آنجاست</td>
+                                    <td>تابعیت شرکاء تأثیری ندارد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۲۲۰ ق.ت</strong></td>
+                                    <td>شرکتی که فاقد عنوان باشد <span class="badge badge-urgent">در حکم شرکت تضامنی</span> است</td>
+                                    <td>نکته بسیار مهم امتحانی</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۶ ل.ا.ق.ت</strong></td>
+                                    <td>شرکت سهامی عام: حداقل <span class="highlight">۲۰٪</span> تعهد + <span class="highlight">۳۵٪</span> نقدی + عرضه به عموم</td>
+                                    <td>سه شرط همزمان باید محقق شود</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۴۸ ل.ا.ق.ت</strong></td>
+                                    <td>حداکثر <span class="badge badge-warning">نیمی</span> از سهام می‌تواند ممتاز باشد</td>
+                                    <td>سهام ممتاز ممکن است حق رأی نداشته باشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۸۴ ل.ا.ق.ت</strong></td>
+                                    <td>تصمیمات مجمع فوق‌العاده با <span class="badge badge-urgent">۲/۳ آراء</span> حاضر در جلسه</td>
+                                    <td>تغییر اساسنامه، افزایش/کاهش سرمایه، انحلال</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۱۰۷ ل.ا.ق.ت</strong></td>
+                                    <td>حداقل <span class="badge badge-urgent">۵ نفر</span> هیئت مدیره در سهامی عام</td>
+                                    <td>حداقل ۳ نفر باید سهامدار باشند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۱۳۲ ل.ا.ق.ت</strong></td>
+                                    <td>حداقل <span class="badge badge-urgent">۲ بازرس اصلی + ۱ علی‌البدل</span></td>
+                                    <td>بازرسان نمی‌توانند سهامدار باشند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۹۴ ق.ت</strong></td>
+                                    <td>شرکت با مسئولیت محدود: حداقل <span class="badge badge-good">۲ نفر</span></td>
+                                    <td>مسئولیت محدود به آورده</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۱۱۶ ق.ت</strong></td>
+                                    <td>شرکت تضامنی: مسئولیت <span class="badge badge-verybad">تضامنی و نامحدود</span></td>
+                                    <td>همه شرکا باید تاجر باشند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۱۴۸ ق.ت</strong></td>
+                                    <td>شرکت مختلط: دارای <span class="highlight">شرکای ضامن + شرکای محدود</span></td>
+                                    <td>مدیریت انحصاری ضامن‌ها</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ماده ۱ قانون ثبت شرکت‌ها</strong></td>
+                                    <td>شرکت ایرانی = شرکتی که مرکز اصلی آن در ایران باشد</td>
+                                    <td>حداقل ۵۱٪ سرمایه باید ایرانی باشد</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-title">جدول ۳: نکات طلایی و تست‌های پرتکرار</div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="group-clinical">موضوع</th>
+                                    <th class="group-prognosis">نکته کلیدی امتحانی</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>شرکت تجاری همیشه...</strong></td>
+                                    <td>به موجب <span class="highlight">عقد (قرارداد)</span> تشکیل می‌شود <span class="icon-tag">ماده ۲۰ ق.ت</span>؛ عقدی لازم است نه جایز</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت مدنی...</strong></td>
+                                    <td>ممکن است به طریق دیگر (وراثت، اختلاط) تشکیل شود و <span class="badge badge-poor">فاقد شخصیت حقوقی</span> است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت بدون عنوان...</strong></td>
+                                    <td><span class="badge badge-urgent">در حکم شرکت تضامنی</span> است <span class="icon-tag">ماده ۲۲۰ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>صرافی و شرکت تضامنی</strong></td>
+                                    <td>اشخاصی که می‌خواهند به کار صرافی اشتغال داشته باشند <span class="badge badge-urgent">باید شرکت تضامنی</span> تشکیل دهند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تابعیت شرکت</strong></td>
+                                    <td>تابعیت = تابعیت کشور <span class="highlight">اقامتگاه</span> شرکت؛ تابعیت شرکاء مؤثر نیست</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهام ممتاز</strong></td>
+                                    <td>حداکثر <span class="badge badge-warning">نیمی</span> از سهام؛ ممکن است حق رأی نداشته باشد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>افزایش سرمایه</strong></td>
+                                    <td>با <span class="highlight">مجمع عمومی فوق‌العاده</span> و ۲/۳ آراء <span class="icon-tag">ماده ۸۴ + ۱۵۷ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حق تقدم</strong></td>
+                                    <td>سهامداران موجود در افزایش سرمایه حق تقدم دارند؛ قابل انتقال است</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>انحلال تضامنی</strong></td>
+                                    <td>با <span class="badge badge-urgent">اتفاق آرا</span> (نه اکثریت) <span class="icon-tag">ماده ۱۳۹ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>فوت شریک در تضامنی</strong></td>
+                                    <td>شرکت منحل می‌شود <span class="badge badge-warning">مگر آنکه شرکت‌نامه خلاف آن را مقرر داشته باشد</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>مدیریت در مختلط</strong></td>
+                                    <td>فقط <span class="highlight">شرکای ضامن</span> می‌توانند مدیر شوند <span class="icon-tag">ماده ۱۵۲ ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نام شرکت مختلط</strong></td>
+                                    <td>فقط شامل نام <span class="highlight">شرکای ضامن</span> است؛ نام محدودها نمی‌آید</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>تعاونی فراگیر ملی</strong></td>
+                                    <td><span class="badge badge-urgent">۷۰٪</span> اعضا از دهک‌های پایین <span class="icon-tag">بند ۱۰ ماده ۱ ق.ب.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>حداقل تعاونی</strong></td>
+                                    <td><span class="badge badge-urgent">۷ نفر</span> عضو <span class="icon-tag">ماده ۸ ق.ب.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شرکت دولتی</strong></td>
+                                    <td>بیش از <span class="highlight">۵۰٪</span> سرمایه متعلق به دولت <span class="icon-tag">ماده ۴ ق.م.خ</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ترتیب پرداخت در تصفیه</strong></td>
+                                    <td>۱- هزینه تصفیه | ۲- دیون | ۳- سهامداران/شرکا <span class="icon-tag">ماده ۲۱۲ ل.ا.ق.ت</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهامداران آخرین...</strong></td>
+                                    <td>سهامداران <span class="badge badge-verybad">آخرین</span> نفراتی هستند که در تصفیه پرداخت می‌شوند</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>اوراق قرضه</strong></td>
+                                    <td>دارنده اوراق قرضه <span class="highlight">دائن</span> شرکت است نه شریک؛ سود ثابت دارد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهام جایزه</strong></td>
+                                    <td>از محل <span class="highlight">سود انباشته</span>؛ <span class="badge badge-good">رایگان</span> و سرمایه را افزایش می‌دهد</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>شفعه</strong></td>
+                                    <td>در با مسئولیت محدود، تضامنی و نسبی: مدت <span class="badge badge-urgent">۱۵ روز</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end container -->
+
+    <script>
+        function showPage(pageId) {
+            var sections = document.querySelectorAll('.page-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            var target = document.getElementById(pageId);
+            if (target) {
+                target.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // ===== DARK MODE TOGGLE =====
+        (function() {
+            const toggle = document.getElementById('themeToggle');
+            const icon = document.getElementById('themeIcon');
+            const label = document.getElementById('themeLabel');
+            const body = document.body;
+
+            // Check localStorage
+            let darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                body.classList.add('dark-mode');
+                updateToggleUI(true);
+            }
+
+            function updateToggleUI(isDark) {
+                if (isDark) {
+                    icon.innerHTML = `<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 10 10 0 0 0-10-10zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></svg>`;
+                    label.textContent = 'تم تیره';
+                } else {
+                    icon.innerHTML = `<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 10 10 0 0 0-10-10zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></svg>`;
+                    label.textContent = 'تم روشن';
+                }
+            }
+
+            toggle.addEventListener('click', function() {
+                const isDark = body.classList.toggle('dark-mode');
+                localStorage.setItem('darkMode', isDark);
+                updateToggleUI(isDark);
+            });
+
+            // Keyboard accessibility
+            toggle.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle.click();
+                }
+            });
+        })();
+    </script>
+
+
+    <!-- ===== CREDIT ===== -->
+    <div style="text-align:center; padding:40px 20px; color:var(--text-secondary); font-size:14px; font-weight:500;">
+        Created by Maryam Rezaei
+    </div>
+</body>
+</html>
